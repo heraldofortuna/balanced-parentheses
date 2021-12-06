@@ -31,12 +31,13 @@
           <li>Es un emoticón feliz ":)" o uno triste ":(".</li>
         </ol>
         <div>
-          <label>Ingresa un texto aquí:</label>
-          <input type="text" name="message" />
+          <label name="message">Ingresa un texto aquí:</label>
+          <input type="text" id="message" name="message" />
         </div>
-        <button onclick="">Ingresar</button>
+        <button onclick="isBalanced()">Ingresar</button>
         <p>El texto tiene los paréntesis <span id="isBalanced">...</span></p>
       </div>
     </main>
+    <script src="./main.js"></script>
   </body>
 </html>

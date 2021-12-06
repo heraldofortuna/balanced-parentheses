@@ -1,3 +1,10 @@
+const isBalanced = () => {
+  const message = document.getElementById("message").value;
+  const isBalanced = document.getElementById("isBalanced");
+
+  isBalanced.innerHTML = balancedParentheses(message);
+};
+
 const balancedParentheses = (str) => {
   const stack = [];
 
@@ -17,7 +24,7 @@ const balancedParentheses = (str) => {
         }
       } else {
         if (stack.length === 0) {
-          return false;
+          return "desbalanceados";
         }
 
         stack.pop();
@@ -25,14 +32,14 @@ const balancedParentheses = (str) => {
     }
   }
 
-  return stack.length === 0 ? "Balanceado" : "Desbalanceado";
+  return stack.length === 0 ? "balanceados" : "desbalanceados";
 };
 
-console.log("a.", balancedParentheses("hola")); // Balanceado
-console.log("b.", balancedParentheses("(hola)")); // Balanceado
-console.log("c.", balancedParentheses("(()")); // Desbalanceado
-console.log("d.", balancedParentheses("(:)")); // Balanceado
-console.log("e.", balancedParentheses("no voy (:()")); // Balanceado
-console.log("f.", balancedParentheses("hoy pm: fiesta :):)")); // Balanceado
-console.log("g.", balancedParentheses(":((")); // Desbalanceado
-console.log("h.", balancedParentheses("a (b (c (d) c) b) a :)")); // Balanceado
+// console.log("a.", balancedParentheses("hola")); // Balanceado
+// console.log("b.", balancedParentheses("(hola)")); // Balanceado
+// console.log("c.", balancedParentheses("(()")); // Desbalanceado
+// console.log("d.", balancedParentheses("(:)")); // Balanceado
+// console.log("e.", balancedParentheses("no voy (:()")); // Balanceado
+// console.log("f.", balancedParentheses("hoy pm: fiesta :):)")); // Balanceado
+// console.log("g.", balancedParentheses(":((")); // Desbalanceado
+// console.log("h.", balancedParentheses("a (b (c (d) c) b) a :)")); // Balanceado
