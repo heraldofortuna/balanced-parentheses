@@ -1,5 +1,5 @@
 .wrapper {
-  background-color: white;
+  background-color: var(--white-color);
   min-height: 100vh;
   width: 550px;
   margin: 0 auto;
@@ -10,8 +10,6 @@
 }
 
 .container {
-  border: 2px solid red;
-
   width: 95%;
   margin: 0 auto;
   padding: 16px 0;

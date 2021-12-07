@@ -1,0 +1,12 @@
+.list {
+  padding: 0 0 0 16px;
+}
+
+.list li {
+  font-style: italic;
+  margin-top: 6px;
+}
+
+.list li:first-child {
+  margin-top: 0;
+}

@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
+@import url("./base/typography.css");
 @import url("./components/button.css");
 @import url("./components/input.css");
+@import url("./components/list.css");
 @import url("./layout/application.css");
 @import url("./layout/footer.css");
 @import url("./layout/header.css");
@@ -23,24 +25,4 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-h1 {
-  font-size: 42px;
-}
-
-h2 {
-  font-size: 32px;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 18px;
-}
-
-p {
-  font-size: 16px;
 }

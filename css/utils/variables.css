@@ -1,8 +1,10 @@
 :root {
   --light-green-color: #22c488;
   --dark-green-color: #035c5a;
-  --orange-color: #ff9700;
+  --light-orange-color: #ff9700;
+  --dark-orange-color: #ef8800;
   --light-gray-color: #a0a0a0;
+  --light-gray-color-2: #cbd6e2;
   --dark-gray-color: #535353;
   --white-color: #fff;
 }

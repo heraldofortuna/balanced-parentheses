@@ -4,33 +4,20 @@
   gap: 10px;
 }
 
-.application__examples p {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.application__examples__list {
-  margin: 0 0 0 16px;
-}
-
 .application__examples__list li {
-  font-style: italic;
-  margin-top: 6px;
+  width: fit-content;
+  cursor: pointer;
 }
 
-.application__examples__list li:first-child {
-  margin-top: 0;
+.application__examples__list li:hover {
+  text-decoration: underline;
+  color: var(--light-green-color);
 }
 
 .application__input {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.application__input label {
-  font-size: 20px;
-  font-weight: 700;
 }
 
 .isBalanced {

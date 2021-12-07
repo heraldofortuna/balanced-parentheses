@@ -12,7 +12,7 @@
     <div class="wrapper">
       <header class="header">
         <div class="container header__container">
-          <h1 class="header__title">Balanced Parentheses</h1>
+          <h1 class="title">¿Paréntesis balanceados?</h1>
           <ul class="header__menu">
             <li><button class="button" onclick="setRules()">Reglas</button></li>
             <li>
@@ -36,7 +36,7 @@
                 Un mensaje tiene los paréntesis balanceados cuando cumple una de
                 las siguientes reglas:
               </p>
-              <ol class="rules__list">
+              <ol class="list">
                 <li>Es un mensaje vacío.</li>
                 <li>
                   Contiene sólo una o más repeticiones de las letras "a" a la
@@ -59,16 +59,20 @@
           <section class="application notDisplayed">
             <div class="section__container">
               <div class="application__examples">
-                <p>Prueba ingresar estos textos:</p>
-                <ol class="application__examples__list">
-                  <li>(()</li>
-                  <li>(:)</li>
-                  <li>:((</li>
-                  <li>a (b (c (d) c) b) a :)</li>
+                <h3>Prueba ingresar estos textos:</h3>
+                <ol class="list application__examples__list">
+                  <li id="0" onclick="setExample()">hola</li>
+                  <li id="1" onclick="setExample()">(()</li>
+                  <li id="2" onclick="setExample()">(:)</li>
+                  <li id="3" onclick="setExample()">(hola)</li>
+                  <li id="4" onclick="setExample()">no voy (:()</li>
+                  <li id="5" onclick="setExample()">hoy pm: fiesta :):)</li>
+                  <li id="6" onclick="setExample()">:((</li>
+                  <li id="7" onclick="setExample()">a (b (c (d) c) b) a :)</li>
                 </ol>
               </div>
               <div class="application__input">
-                <label name="message">Ingresa un texto aquí:</label>
+                <label name="message"><h3>Ingresa un texto aquí:</h3></label>
                 <input
                   class="input"
                   type="text"
@@ -80,7 +84,7 @@
               <button class="button button--secondary" onclick="isBalanced()">
                 Ingresar
               </button>
-              <p>Resultado:</p>
+              <h3>Resultado:</h3>
               <span class="isBalanced" id="isBalanced"
                 >No hay ningún texto</span
               >

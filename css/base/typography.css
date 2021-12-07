@@ -1,0 +1,21 @@
+h1 {
+  font-size: 38px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.title {
+  color: var(--dark-green-color);
+  text-align: center;
+}

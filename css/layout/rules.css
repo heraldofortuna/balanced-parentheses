@@ -1,16 +1,3 @@
 .rules__title {
   text-align: center;
 }
-
-.rules__list {
-  padding: 0 0 0 16px;
-}
-
-.rules__list li {
-  font-style: italic;
-  margin-top: 6px;
-}
-
-.rules__list li:first-child {
-  margin-top: 0;
-}

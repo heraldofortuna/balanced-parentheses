@@ -1,6 +1,13 @@
 .input {
   height: 40px;
   padding: 4px;
+  border: 1px solid var(--light-gray-color-2);
+
   font-size: 16px;
   text-align: center;
+}
+
+.input:focus {
+  outline: none !important;
+  border: 1px solid var(--light-green-color);
 }

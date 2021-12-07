@@ -14,6 +14,16 @@ const setApplication = () => {
   application.classList.remove("notDisplayed");
 };
 
+const setExample = () => {
+  const example = document
+    .querySelectorAll(".application__examples__list li")
+    .forEach((item) => {
+      console.log(item);
+    });
+
+  console.log(example);
+};
+
 const isBalanced = () => {
   const message = document.getElementById("message").value;
   const isBalanced = document.getElementById("isBalanced");
