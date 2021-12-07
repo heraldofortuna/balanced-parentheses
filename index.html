@@ -5,39 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Balanced Parentheses</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <main>
-      <div>
-        <h2>¿Qué es un mensaje con paréntesis balanceados?</h2>
-        <p>
-          Un mensaje tiene los paréntesis balanceados cuando cumple una de las
-          siguientes reglas:
-        </p>
-        <ol>
-          <li>Es un mensaje vacío.</li>
-          <li>
-            Contiene sólo una o más repeticiones de las letras "a" a la "z",
-            espacio " ", o dos puntos ":".
-          </li>
-          <li>
-            Comienza por un paréntesis de apertura "(", seguido de un mensaje
-            con paréntesis balanceados, seguido de un paréntesis de cierre ")".
-          </li>
-          <li>
-            Es un mensaje con paréntesis balanceados seguido de otro mensaje con
-            paréntesis balanceados.
-          </li>
-          <li>Es un emoticón feliz ":)" o uno triste ":(".</li>
-        </ol>
-        <div>
-          <label name="message">Ingresa un texto aquí:</label>
-          <input type="text" id="message" name="message" />
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <h1>¿Qué es un mensaje con paréntesis balanceados?</h1>
         </div>
-        <button onclick="isBalanced()">Ingresar</button>
-        <p>El texto tiene los paréntesis <span id="isBalanced">...</span></p>
-      </div>
-    </main>
+      </header>
+      <main>
+        <div class="container">
+          <p>
+            Un mensaje tiene los paréntesis balanceados cuando cumple una de las
+            siguientes reglas:
+          </p>
+          <ol class="rules">
+            <li>Es un mensaje vacío.</li>
+            <li>
+              Contiene sólo una o más repeticiones de las letras "a" a la "z",
+              espacio " ", o dos puntos ":".
+            </li>
+            <li>
+              Comienza por un paréntesis de apertura "(", seguido de un mensaje
+              con paréntesis balanceados, seguido de un paréntesis de cierre
+              ")".
+            </li>
+            <li>
+              Es un mensaje con paréntesis balanceados seguido de otro mensaje
+              con paréntesis balanceados.
+            </li>
+            <li>Es un emoticón feliz ":)" o uno triste ":(".</li>
+          </ol>
+          <div>
+            <label name="message">Ingresa un texto aquí:</label>
+            <input type="text" id="message" name="message" />
+          </div>
+          <button onclick="isBalanced()">Ingresar</button>
+          <p>El texto tiene los paréntesis <span id="isBalanced">...</span></p>
+        </div>
+      </main>
+    </div>
+    <!-- Enlazamos el archivo principal con los algoritmos JS -->
     <script src="./main.js"></script>
   </body>
 </html>
