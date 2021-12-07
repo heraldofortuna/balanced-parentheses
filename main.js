@@ -1,9 +1,17 @@
 const setRules = () => {
-  console.log("Set rules!");
+  const rules = document.querySelector(".rules");
+  const application = document.querySelector(".application");
+
+  rules.classList.remove("notDisplayed");
+  application.classList.add("notDisplayed");
 };
 
 const setApplication = () => {
-  console.log("Set application!");
+  const rules = document.querySelector(".rules");
+  const application = document.querySelector(".application");
+
+  rules.classList.add("notDisplayed");
+  application.classList.remove("notDisplayed");
 };
 
 const isBalanced = () => {

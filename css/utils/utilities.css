@@ -12,3 +12,14 @@
   margin: 0 auto;
   padding: 16px 0;
 }
+
+.section__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.notDisplayed {
+  display: none;
+}
+
