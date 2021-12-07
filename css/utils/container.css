@@ -4,3 +4,10 @@
   width: 50%;
   margin: 0 auto;
 }
+
+.container {
+  border: 2px solid red;
+
+  width: 95%;
+  margin: 0 auto;
+}

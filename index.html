@@ -9,40 +9,53 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container">
-          <h1>¿Qué es un mensaje con paréntesis balanceados?</h1>
+      <header class="header">
+        <div class="header__container">
+          <h1 class="header__title">Balanced Parentheses</h1>
+          <ul class="header__menu">
+            <li>Reglas</li>
+            <li>Aplicación</li>
+          </ul>
         </div>
       </header>
+
       <main>
         <div class="container">
-          <p>
-            Un mensaje tiene los paréntesis balanceados cuando cumple una de las
-            siguientes reglas:
-          </p>
-          <ol class="rules">
-            <li>Es un mensaje vacío.</li>
-            <li>
-              Contiene sólo una o más repeticiones de las letras "a" a la "z",
-              espacio " ", o dos puntos ":".
-            </li>
-            <li>
-              Comienza por un paréntesis de apertura "(", seguido de un mensaje
-              con paréntesis balanceados, seguido de un paréntesis de cierre
-              ")".
-            </li>
-            <li>
-              Es un mensaje con paréntesis balanceados seguido de otro mensaje
-              con paréntesis balanceados.
-            </li>
-            <li>Es un emoticón feliz ":)" o uno triste ":(".</li>
-          </ol>
-          <div>
-            <label name="message">Ingresa un texto aquí:</label>
-            <input type="text" id="message" name="message" />
-          </div>
-          <button onclick="isBalanced()">Ingresar</button>
-          <p>El texto tiene los paréntesis <span id="isBalanced">...</span></p>
+          <section class="rules">
+            <h2>¿Qué es un mensaje con paréntesis balanceados?</h2>
+            <p>
+              Un mensaje tiene los paréntesis balanceados cuando cumple una de
+              las siguientes reglas:
+            </p>
+            <ol class="rules">
+              <li>Es un mensaje vacío.</li>
+              <li>
+                Contiene sólo una o más repeticiones de las letras "a" a la "z",
+                espacio " ", o dos puntos ":".
+              </li>
+              <li>
+                Comienza por un paréntesis de apertura "(", seguido de un
+                mensaje con paréntesis balanceados, seguido de un paréntesis de
+                cierre ")".
+              </li>
+              <li>
+                Es un mensaje con paréntesis balanceados seguido de otro mensaje
+                con paréntesis balanceados.
+              </li>
+              <li>Es un emoticón feliz ":)" o uno triste ":(".</li>
+            </ol>
+          </section>
+
+          <section class="application">
+            <div>
+              <label name="message">Ingresa un texto aquí:</label>
+              <input type="text" id="message" name="message" />
+            </div>
+            <button onclick="isBalanced()">Ingresar</button>
+            <p>
+              El texto tiene los paréntesis <span id="isBalanced">...</span>
+            </p>
+          </section>
         </div>
       </main>
     </div>
