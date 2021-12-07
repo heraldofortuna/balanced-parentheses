@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Balanced Parentheses</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__container">
+        <div class="container header__container">
           <h1 class="header__title">Balanced Parentheses</h1>
           <ul class="header__menu">
-            <li><button onclick="setRules()">Reglas</button></li>
-            <li><button onclick="setApplication()">Aplicación</button></li>
+            <li><button class="button" onclick="setRules()">Reglas</button></li>
+            <li>
+              <button class="button" onclick="setApplication()">
+                Aplicación
+              </button>
+            </li>
           </ul>
         </div>
       </header>
@@ -53,19 +58,45 @@
           <!-- Sección de la aplicación -->
           <section class="application notDisplayed">
             <div class="section__container">
-              <h2 class="rules__title">Ingrese un texto aquí</h2>
-              <div>
-                <label name="message">Ingresa un texto aquí:</label>
-                <input type="text" id="message" name="message" />
+              <div class="application__examples">
+                <p>Prueba ingresar estos textos:</p>
+                <ol class="application__examples__list">
+                  <li>(()</li>
+                  <li>(:)</li>
+                  <li>:((</li>
+                  <li>a (b (c (d) c) b) a :)</li>
+                </ol>
               </div>
-              <button onclick="isBalanced()">Ingresar</button>
-              <p>
-                El texto tiene los paréntesis <span id="isBalanced">...</span>
-              </p>
+              <div class="application__input">
+                <label name="message">Ingresa un texto aquí:</label>
+                <input
+                  class="input"
+                  type="text"
+                  id="message"
+                  name="message"
+                  placeholder="ej. (hola mundo)"
+                />
+              </div>
+              <button class="button button--secondary" onclick="isBalanced()">
+                Ingresar
+              </button>
+              <p>Resultado:</p>
+              <span class="isBalanced" id="isBalanced"
+                >No hay ningún texto</span
+              >
             </div>
           </section>
         </div>
       </main>
+
+      <footer class="footer">
+        <div class="container footer__container">
+          <p class="footer__copyright">
+            Copyright 2021 | Heraldo Fortuna | Todos los derechos reservados
+          </p>
+          <img class="footer__logo" src="./assets/logo.png" alt="" srcset="" />
+        </div>
+      </footer>
     </div>
     <!-- Enlazamos el archivo principal con los algoritmos JS -->
     <script src="./main.js"></script>

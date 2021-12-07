@@ -40,7 +40,7 @@ const balancedParentheses = (str) => {
         }
       } else {
         if (stack.length === 0) {
-          return "desbalanceados";
+          return "Desbalanceado";
         }
 
         stack.pop();
@@ -48,7 +48,7 @@ const balancedParentheses = (str) => {
     }
   }
 
-  return stack.length === 0 ? "balanceados" : "desbalanceados";
+  return stack.length === 0 ? "Balanceado" : "Desbalanceado";
 };
 
 // console.log("a.", balancedParentheses("hola")); // Balanceado

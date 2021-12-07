@@ -1,0 +1,18 @@
+.footer {
+  background-color: var(--dark-gray-color);
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__copyright {
+  color: var(--light-gray-color);
+  font-size: 14px;
+}
+
+.footer__logo {
+  width: 80px;
+}

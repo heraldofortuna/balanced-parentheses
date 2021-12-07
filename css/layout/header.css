@@ -27,10 +27,6 @@
 }
 
 .header__menu li {
-  border: 2px solid black;
-  cursor: pointer;
-
   width: 100%;
   text-align: center;
-  padding: 10px 0;
 }
