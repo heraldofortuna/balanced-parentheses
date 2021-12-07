@@ -1,3 +1,11 @@
+const setRules = () => {
+  console.log("Set rules!");
+};
+
+const setApplication = () => {
+  console.log("Set application!");
+};
+
 const isBalanced = () => {
   const message = document.getElementById("message").value;
   const isBalanced = document.getElementById("isBalanced");

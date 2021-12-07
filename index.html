@@ -13,21 +13,24 @@
         <div class="header__container">
           <h1 class="header__title">Balanced Parentheses</h1>
           <ul class="header__menu">
-            <li>Reglas</li>
-            <li>Aplicación</li>
+            <li><button onclick="setRules()">Reglas</button></li>
+            <li><button onclick="setApplication()">Aplicación</button></li>
           </ul>
         </div>
       </header>
 
       <main>
         <div class="container">
+          <!-- Sección de las reglas -->
           <section class="rules">
-            <h2>¿Qué es un mensaje con paréntesis balanceados?</h2>
-            <p>
+            <h2 class="rules__title">
+              ¿Qué es un mensaje con paréntesis balanceados?
+            </h2>
+            <p class="rules__description">
               Un mensaje tiene los paréntesis balanceados cuando cumple una de
               las siguientes reglas:
             </p>
-            <ol class="rules">
+            <ol class="rules__list">
               <li>Es un mensaje vacío.</li>
               <li>
                 Contiene sólo una o más repeticiones de las letras "a" a la "z",
@@ -45,8 +48,9 @@
               <li>Es un emoticón feliz ":)" o uno triste ":(".</li>
             </ol>
           </section>
-
+          <!-- Sección de la aplicación -->
           <section class="application">
+            <h2 class="rules__title">Ingrese un texto aquí</h2>
             <div>
               <label name="message">Ingresa un texto aquí:</label>
               <input type="text" id="message" name="message" />
