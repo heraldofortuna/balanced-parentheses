@@ -1,4 +1,4 @@
-# balanced-parentheses
+# ¿Paréntesis balanceados?
 
 Para iniciar el proceso, te envío un desafío de programación:
 ¿No te pasa que te duelen los ojos cuando ves un mensaje con paréntesis desbalanceados? A nosotros los programadores, puede llegar a causarnos un dolor de cabeza ver un whatsapp como "gracias por eso :)))", "me encantaría ir (pero no creo que pueda :(", o "estoy trabajando (en lo que me pediste (pero no terminaré hoy:()".
@@ -44,9 +44,9 @@ h. "a (b (c (d) c) b) a :)" -> balanceado (ej, si el último paréntesis es en r
 
 ### Captura
 
-<img width="400px"  src="https://github.com/no-te-rindas/imagenes/blob/main/Readmes/portafolio-jaume/jaume-desktop.png?raw=true" />
+![Project Image](assets/screenshot-1.png)
 
-<img width="200px" src="https://github.com/no-te-rindas/imagenes/blob/main/Readmes/portafolio-jaume/jaume-mobile.png?raw=true" />
+![Project Image](assets/screenshot-2.png)
 
 ### Enlaces
 
@@ -71,7 +71,8 @@ Más que aprender, me gustó el reto porque me permitió practicar mis habilidad
 
 ## Desarrollo continuo
 
-Lo siguiente que haré será aprender a usar el Figma desde el punto de vista de un desarrollador Frontend, además de mejorar mis skills en flexbox y grid llevando algun curso con Leonidas.
+Lo siguiente que haré será mejorar mis habilidades para crear algoritmos en JavaScript. Siento que debo mejorar
+más mi velocidad.
 
 ## Recursos
 
