@@ -2,18 +2,26 @@
 const setRules = () => {
   const rules = document.querySelector(".rules");
   const application = document.querySelector(".application");
+  const rulesButton = document.querySelector("#rulesButton");
+  const applicationButton = document.querySelector("#applicationButton");
 
   rules.classList.remove("notDisplayed");
   application.classList.add("notDisplayed");
+  applicationButton.classList.remove("isFocus");
+  rulesButton.classList.add("isFocus");
 };
 
 // Función que muestra la sección de la aplicación.
 const setApplication = () => {
   const rules = document.querySelector(".rules");
   const application = document.querySelector(".application");
+  const rulesButton = document.querySelector("#rulesButton");
+  const applicationButton = document.querySelector("#applicationButton");
 
   rules.classList.add("notDisplayed");
   application.classList.remove("notDisplayed");
+  rulesButton.classList.remove("isFocus");
+  applicationButton.classList.add("isFocus");
 };
 
 // Función que setea los ejemplos en el input al clickearlos.

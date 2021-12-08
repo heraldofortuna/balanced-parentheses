@@ -15,9 +15,9 @@
         <div class="container header__container">
           <h1 class="title">¿Paréntesis balanceados?</h1>
           <ul class="header__menu">
-            <li><button class="button" onclick="setRules()">Reglas</button></li>
+            <li><button class="button" id="rulesButton" onclick="setRules()">Reglas</button></li>
             <li>
-              <button class="button" onclick="setApplication()">
+              <button class="button isFocus" id="applicationButton" onclick="setApplication()">
                 Aplicación
               </button>
             </li>
@@ -28,7 +28,7 @@
       <main>
         <div class="container">
           <!-- Sección de las reglas -->
-          <section class="rules">
+          <section class="rules notDisplayed">
             <div class="section__container">
               <p class="rules__description">
                 ¿No te pasa que te duelen los ojos cuando ves un mensaje con paréntesis desbalanceados?<br><br>
@@ -59,7 +59,7 @@
             </div>
           </section>
           <!-- Sección de la aplicación -->
-          <section class="application notDisplayed">
+          <section class="application">
             <div class="section__container">
               <div class="application__examples">
                 <h3>Prueba ingresar estos textos clickeándolos:</h3>
