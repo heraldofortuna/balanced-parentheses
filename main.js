@@ -30,7 +30,7 @@ const isBalanced = () => {
   isBalanced.innerHTML = balancedParentheses(message);
 };
 
-// Algoritmos que identifica si el "string" de entrada eso un mensaje de paréntesis balanceados.
+// Algoritmo que identifica si el "string" de entrada eso un mensaje de paréntesis balanceados.
 // Retorna un string igual a "Balanceado" o "Desbalanceado" dependiendo del resultado.
 const balancedParentheses = (str) => {
   const stack = []; // Creamos un array que funcionará como pila.
@@ -42,18 +42,16 @@ const balancedParentheses = (str) => {
         stack.push(str[idx]);
       }
     }
-    // Si encontramos un paréntesis cerrado y no es parte de un emoticón, lo quitamos de la pila.
+    // Si encontramos un paréntesis cerrado y no es parte de un emoticón lo quitamos de la pila.
+    // Además, si hay puntos entre 2 paréntesis, quitamos el paréntesis final del stack.
     if (str[idx] === ")") {
-      if (str[idx - 1] === ":") {
-        if (str[idx - 2] === "(") {
-          // console.log("No es una carita");
-          stack.pop();
-        }
-      } else {
+      if (
+        str[idx - 1] !== ":" ||
+        (str[idx - 1] === ":" && stack.length === 1)
+      ) {
         if (stack.length === 0) {
-          return "Desbalanceado";
+          return "Desbalanceado"; // Si la pila está vacía, significa que el texto es desbalanceado.
         }
-
         stack.pop();
       }
     }
