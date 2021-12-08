@@ -48,8 +48,6 @@ const balancedParentheses = (str) => {
         if (str[idx - 2] === "(") {
           // console.log("No es una carita");
           stack.pop();
-        } else {
-          // console.log("Encontré una carita");
         }
       } else {
         if (stack.length === 0) {

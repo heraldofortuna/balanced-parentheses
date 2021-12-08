@@ -44,8 +44,6 @@ h. "a (b (c (d) c) b) a :)" -> balanceado (ej, si el último paréntesis es en r
 
 ### Captura
 
-![Project Image](assets/screenshot-1.png)
-
 ![Project Image](assets/screenshot-2.png)
 
 ### Enlaces
