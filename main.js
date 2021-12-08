@@ -14,14 +14,9 @@ const setApplication = () => {
   application.classList.remove("notDisplayed");
 };
 
-const setExample = () => {
-  const example = document
-    .querySelectorAll(".application__examples__list li")
-    .forEach((item) => {
-      console.log(item);
-    });
-
-  console.log(example);
+const setExample = (example) => {
+  const input = document.querySelector(".input");
+  input.value = example.textContent;
 };
 
 const isBalanced = () => {

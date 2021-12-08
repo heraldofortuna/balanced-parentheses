@@ -10,6 +10,7 @@
   </head>
   <body>
     <div class="wrapper">
+      <!-- Sección header -->
       <header class="header">
         <div class="container header__container">
           <h1 class="title">¿Paréntesis balanceados?</h1>
@@ -23,19 +24,21 @@
           </ul>
         </div>
       </header>
-
+      <!-- Sección main -->
       <main>
         <div class="container">
           <!-- Sección de las reglas -->
           <section class="rules">
             <div class="section__container">
-              <h2 class="rules__title">
-                ¿Qué es un mensaje con paréntesis balanceados?
-              </h2>
               <p class="rules__description">
-                Un mensaje tiene los paréntesis balanceados cuando cumple una de
-                las siguientes reglas:
+                ¿No te pasa que te duelen los ojos cuando ves un mensaje con paréntesis desbalanceados?<br><br>
+                A nosotros los programadores, puede llegar a causarnos un dolor de cabeza ver un whatsapp como
+                <span>"gracias por eso :)))"</span>, <span>"me encantaría ir (pero no creo que pueda :("</span>,
+                o <span>"estoy trabajando (en lo que me pediste (pero no terminaré hoy:()"</span>.<br><br>
+                Para peor, con los emoticones, se hace difícil saber si un mensaje tiene los paréntesis balanceados.<br><br>
+                Un mensaje tiene los paréntesis balanceados cuando cumple una de las siguientes reglas:
               </p>
+              <h3 class="subtitle">¿Qué es un mensaje con paréntesis balanceados?</h3>
               <ol class="list">
                 <li>Es un mensaje vacío.</li>
                 <li>
@@ -59,17 +62,17 @@
           <section class="application notDisplayed">
             <div class="section__container">
               <div class="application__examples">
-                <h3>Prueba ingresar estos textos:</h3>
-                <ol class="list application__examples__list">
-                  <li id="0" onclick="setExample()">hola</li>
-                  <li id="1" onclick="setExample()">(()</li>
-                  <li id="2" onclick="setExample()">(:)</li>
-                  <li id="3" onclick="setExample()">(hola)</li>
-                  <li id="4" onclick="setExample()">no voy (:()</li>
-                  <li id="5" onclick="setExample()">hoy pm: fiesta :):)</li>
-                  <li id="6" onclick="setExample()">:((</li>
-                  <li id="7" onclick="setExample()">a (b (c (d) c) b) a :)</li>
-                </ol>
+                <h3>Prueba ingresar estos textos clickeándolos:</h3>
+                <ul class="list application__examples__list">
+                  <li><p onclick="setExample(this)">hola</p><span>// -> Balanceado</span></li>
+                  <li><p onclick="setExample(this)">(()</p><span> // -> Balanceado</span></li>
+                  <li><p onclick="setExample(this)">(:)</p><span> // -> Balanceado</span></li>
+                  <li><p onclick="setExample(this)">(hola)</p><span> // -> Desbalanceado</span></li>
+                  <li><p onclick="setExample(this)">no voy (:()</p><span> // -> Balanceado</span></li>
+                  <li><p onclick="setExample(this)">hoy pm: fiesta :):)</p><span> // -> Balanceado</span></li>
+                  <li><p onclick="setExample(this)">:((</p><span> // -> Desbalanceado</span></li>
+                  <li><p onclick="setExample(this)">a (b (c (d) c) b) a :)</p><span> // -> Balanceado</span</li>
+                </ul>
               </div>
               <div class="application__input">
                 <label name="message"><h3>Ingresa un texto aquí:</h3></label>
@@ -92,7 +95,7 @@
           </section>
         </div>
       </main>
-
+      <!-- Sección footer -->
       <footer class="footer">
         <div class="container footer__container">
           <p class="footer__copyright">

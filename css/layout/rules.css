@@ -1,3 +1,8 @@
-.rules__title {
-  text-align: center;
+.rules__description {
+  text-align: justify;
+}
+
+.rules__description span {
+  font-weight: 700;
+  font-style: italic;
 }

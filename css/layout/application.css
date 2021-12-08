@@ -6,12 +6,21 @@
 
 .application__examples__list li {
   width: fit-content;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.application__examples__list li p:hover {
+  text-decoration: underline;
+  color: var(--light-green-color);
   cursor: pointer;
 }
 
-.application__examples__list li:hover {
-  text-decoration: underline;
-  color: var(--light-green-color);
+.application__examples__list li span {
+  color: var(--light-gray-color);
 }
 
 .application__input {
@@ -21,6 +30,7 @@
 }
 
 .isBalanced {
+  color: var(--light-green-color);
   font-size: 20px;
   font-weight: 700;
   text-align: center;
