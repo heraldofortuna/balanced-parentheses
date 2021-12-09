@@ -50,7 +50,7 @@ const balancedParentheses = (str) => {
     if (str[idx] === ")") {
       if (
         str[idx - 1] !== ":" ||
-        (str[idx - 1] === ":" && stack.length === 1)
+        (str[idx - 1] === ":" && stack.length !== 0)
       ) {
         if (stack.length === 0) {
           return "Desbalanceado"; // Si la pila está vacía, significa que el texto es desbalanceado.
@@ -58,6 +58,7 @@ const balancedParentheses = (str) => {
         stack.pop();
       }
     }
+    console.log(stack);
   }
 
   return stack.length === 0 ? "Balanceado" : "Desbalanceado";
