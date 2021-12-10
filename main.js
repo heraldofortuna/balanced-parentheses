@@ -33,33 +33,31 @@ const isBalanced = () => {
   isBalanced.innerHTML = balancedParentheses(message);
 };
 
-// Algoritmo que identifica si el "string" de entrada eso un mensaje de paréntesis balanceados.
+// Algoritmo que identifica si el "string" de entrada es un mensaje de paréntesis balanceados.
 // Retorna un string igual a "Balanceado" o "Desbalanceado" dependiendo del resultado.
 const balancedParentheses = (str) => {
-  const stack = []; // Creamos un array que funcionará como pila.
+  let parentheses = 0; // Creamos un contador que funcionará como pila.
+  let emoticons = 0; // Creamos un contador de emoticones.
 
   for (let idx = 0; idx < str.length; idx += 1) {
-    // Si encontramos un paréntesis abierto y no es parte de un emoticón, lo agregamos a la pila.
+    // Si encontramos un paréntesis abierto, aumentamos en uno a la pila.
     if (str[idx] === "(") {
-      if (str[idx - 1] !== ":") {
-        stack.push(str[idx]);
+      parentheses += 1;
+      if (str[idx - 1] === ":") {
+        emoticons += 1; // Si encontramos dos puntos antes de un paréntesis abierto, lo contamos como emoticón.
       }
     }
-    // Si encontramos un paréntesis cerrado y no es parte de un emoticón lo quitamos de la pila.
-    // Además, si hay puntos entre 2 paréntesis, quitamos el paréntesis final del stack.
+    // Si encontramos un paréntesis cerrado, disminuimos en 1 a la pila.
     if (str[idx] === ")") {
-      if (
-        str[idx - 1] !== ":" ||
-        (str[idx - 1] === ":" && stack.length !== 0)
-      ) {
-        if (stack.length === 0) {
-          return "Desbalanceado"; // Si la pila está vacía, significa que el texto es desbalanceado.
-        }
-        stack.pop();
+      parentheses -= 1;
+      if (str[idx - 1] === ":") {
+        emoticons += 1; // Si encontramos dos puntos antes de un paréntesis cerrado, lo contamos como emoticón.
       }
     }
-    console.log(stack);
   }
-
-  return stack.length === 0 ? "Balanceado" : "Desbalanceado";
+  // Es balanceado si nuestra pila de paréntesis esta vacía, y si no, podemos tomarlas como caritas siempre cuando
+  // estas sean más que el número de paréntesis sobrantes.
+  return parentheses === 0 || Math.abs(parentheses) <= emoticons
+    ? "Balanceado"
+    : "Desbalanceado";
 };
